@@ -96,7 +96,7 @@ public class Activity_Wifi extends Activity {
         }
 
         public String getWfInfo() {
-            String str = new String();
+            String str;
             str =  "---WifiInfo---\n";
 
             WifiManager wfm = (WifiManager) getSystemService(Context.WIFI_SERVICE);
@@ -109,15 +109,18 @@ public class Activity_Wifi extends Activity {
                 str += "No wifi connection info\n";
             }
 
-            str += "current SSID" + wi.getSSID() + "\n";
-            str += "wifi Info: " + wi.toString() + "\n";
+            try {
+                str += "wifi Info: " + wi.toString() + "\n";
+            }catch(Exception e){
+                str += "error occurred when get SSID!\n";
+            }
 
 
             return str;
         }
 
         public String getWcInfo() {
-            String str = new String();
+            String str;
 
             str = "---WifiConfiguration---\n";
 
