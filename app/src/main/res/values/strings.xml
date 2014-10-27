@@ -10,5 +10,19 @@
     <string name="title_activity_wifi">Activity_Wifi</string>
     <string name="title_activity_html">Activity_Html</string>
     <string name="btn_wifi_refresh">Refresh</string>
+    <string name="bt_main_slide">Test Activity Animation (SlideIn)</string>
+    <string name="bt_main_htmle">Test HTML Rendering</string>
+    <string name="title_activity_slide_one">Activity_SlideOne</string>
+    <string name="title_activity_slide_two">Activity_SlideTwo</string>
+    <string name="title_activity_slide_three">Activity_SlideThree</string>
+    <string name="tv_text_slide1">ONE</string>
+    <string name="tv_text_slide2">TWO</string>
+    <string name="tv_text_slide3">THREE</string>
+    <string name="bt_slide_left1"><![CDATA[<<]]></string>
+    <string name="bt_slide_right1"><![CDATA[>>]]></string>
+    <string name="bt_slide_left2"><![CDATA[<<]]></string>
+    <string name="bt_slide_right2"><![CDATA[>>]]></string>
+    <string name="bt_slide_left3"><![CDATA[<<]]></string>
+    <string name="bt_slide_right3"><![CDATA[>>]]></string>
 
 </resources>

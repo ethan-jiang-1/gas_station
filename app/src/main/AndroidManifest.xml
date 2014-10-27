@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ethan.gas_station" >
+
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -26,6 +28,18 @@
             android:name=".Activity_Html"
             android:label="@string/title_activity_html" >
         </activity>
-
+        <activity
+            android:name=".Activity_SlideOne"
+            android:label="@string/title_activity_slide_one" >
+        </activity>
+        <activity
+            android:name=".Activity_SlideTwo"
+            android:label="@string/title_activity_slide_two" >
+        </activity>
+        <activity
+            android:name=".Activity_SlideThree"
+            android:label="@string/title_activity_slide_three" >
+        </activity>
     </application>
+
 </manifest>

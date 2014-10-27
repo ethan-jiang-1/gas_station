@@ -1,7 +1,10 @@
 package com.example.ethan.gas_station;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -41,6 +44,21 @@ public class Activity_Main extends Activity {
                 Log.d("Activity_Main","onClick html button");
                 Intent intent = new Intent(Activity_Main.this, Activity_Html.class);
                 startActivity(intent);
+            }
+        });
+
+        Button btnSlide = (Button)findViewById(R.id.bt_main_slide);
+        btnSlide.setOnClickListener(new View.OnClickListener() {
+            @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+            public void onClick(View v) {
+                //Do something here
+                Log.d("Activity_Main","onClick Slide button");
+                Intent intent = new Intent(Activity_Main.this, Activity_SlideOne.class);
+
+                Bundle bndlanimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation_l2r_old, R.anim.animation_l2r_new).toBundle();
+                startActivity(intent, bndlanimation);
+
+                //startActivity(intent);
             }
         });
     }
